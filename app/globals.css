@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #0b1020;
+  color: #f3f6ff;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.card {
+  background: #11172a;
+  border: 1px solid #1b2542;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+.hstack { display: flex; gap: 12px; align-items: center; }
+.vstack { display: flex; gap: 12px; flex-direction: column; }
+label { opacity: 0.9; font-weight: 600; }
+input, select, textarea {
+  background: #0c1326;
+  border: 1px solid #1b2542;
+  color: #e7ecff;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+button.secondary { background: #1f2937; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+hr { border: none; border-top: 1px solid #1b2542; margin: 16px 0; }
+.small { font-size: 12px; opacity: 0.8; }
+.preview {
+  width: 100%;
+  max-height: 360px;
+  background: #0c1326;
+  border: 1px dashed #243b79;
+  border-radius: 10px;
+}
